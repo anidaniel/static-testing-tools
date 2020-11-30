@@ -9,6 +9,7 @@ interface User {
     last: string
   }
 }
+
 function getFullName(user: User): string {
   const {
     name: {first, middle, last},
@@ -16,6 +17,6 @@ function getFullName(user: User): string {
   return [first, middle, last].filter(Boolean).join('')
 }
 
-add(1, 2)
+add(1, 'two')
 
-getFullName({name: {first: 'Joe', middle: 'Bud', last: 'Matthews'}})
+getFullName({name: {first: 'Joe', midd1e: 'Bud', last: 'Matthews'}})
