@@ -17,17 +17,17 @@ function add(a: number, b: number): number {
   return a + b
 }
 
-interface   User {
+interface     User {
   name: {
-    first:   string
+    first: string
     middle: string
-    last:    string
+    last: string
   }
 }
 
-function getFullName(user: User): string {
+function getFullName(user:    User): string {
   const {
-    name: {first, middle, last},
+    name: {first, middle,    last},
   } = user
   return [first, middle, last].filter(Boolean).join('')
 }
