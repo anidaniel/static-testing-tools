@@ -11,6 +11,7 @@
 
 // add(1, 'two')
 // getFullName({name: {first: 'Chandler', midd1e: 'Muriel', last: 'Bing'}})
+
 function add(a: number, b: number): number {
   return a + b
 }
@@ -30,6 +31,6 @@ function getFullName(user: User): string {
   return [first, middle, last].filter(Boolean).join('')
 }
 
-add(1, 'two')
+add(1, 2)
 
-getFullName({name: {first: 'Chandler', midd1e: 'Muriel', last: 'Bing'}})
+getFullName({name: {first: 'Chandler', middle: 'Muriel', last: 'Bing'}})
