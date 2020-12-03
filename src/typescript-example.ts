@@ -28,7 +28,7 @@ interface User {
 function     getFullName(user: User): string {
   const {
     name: {first, middle, last},
-  } = user
+  } = user 
   return [first,    middle, last].filter(Boolean).join('')
 }
 
